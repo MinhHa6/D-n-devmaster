@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Báo Cáo</title>
+    <link rel="stylesheet" href="baocao.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Báo Cáo Hệ Thống</h1>
+        <div id="backButtonContainer">
+            <a href="trangchu.html" class="backButton">Quay về Trang Chủ</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Tổng quan báo cáo -->
+        <section id="overview">
+            <h2>Tổng Quan Báo Cáo</h2>
+            <div class="report-summary">
+                <div class="report-item">
+                    <h3>Số lượng tài sản</h3>
+                    <p id="assetCount">100</p>
+                </div>
+                <div class="report-item">
+                    <h3>Số lượng người dùng</h3>
+                    <p id="userCount">500</p>
+                </div>
+                <div class="report-item">
+                    <h3>Số lượng yêu cầu bảo trì</h3>
+                    <p id="maintenanceRequestCount">15</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Biểu đồ báo cáo -->
+        <section id="chart-section">
+            <h2>Biểu Đồ Báo Cáo</h2>
+            <canvas id="reportChart" width="400" height="200"></canvas>
+        </section>
+
+        <!-- Bảng báo cáo -->
+        <section id="report-table">
+            <h2>Bảng Báo Cáo</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Tên Tài Sản</th>
+                        <th>Số Lượng</th>
+                        <th>Vị Trí</th>
+                    </tr>
+                </thead>
+                <tbody id="reportTableBody">
+                    <!-- Dữ liệu báo cáo sẽ được hiển thị ở đây -->
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Hệ thống Báo Cáo</p>
+    </footer>
+
+    <script src="baocao.js"></script>
+</body>
+</html>

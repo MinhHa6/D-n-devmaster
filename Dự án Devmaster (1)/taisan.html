@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Tài Sản</title>
+    <link rel="stylesheet" href="taisan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+
+    <header>
+        <h1>Quản Lý Tài Sản</h1>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logoql.jpg" alt="logo">
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="trangchu.html">Trang Chủ</a></li>
+                    <li><a href="baotri.html">Bảo trì</a></li>
+                    <li><a href="baocao.html">Báo Cáo</a></li>
+                    <li><a href="lienhe.html">Liên Hệ</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Form Thêm Tài Sản -->
+        <section id="addAsset">
+            <h2>Thêm Tài Sản Mới</h2>
+            <form id="addAssetForm">
+                <input type="text" id="assetName" placeholder="Tên tài sản" required>
+                <input type="number" id="assetQuantity" placeholder="Số lượng" required>
+                <input type="text" id="assetLocation" placeholder="Vị trí" required>
+                <input type="file" id="assetImage" accept="image/*" required>  <!-- Thêm trường chọn hình ảnh -->
+                <button type="submit">Thêm Tài Sản</button>
+            </form>
+        </section>
+
+        <!-- Danh Sách Tài Sản -->
+        <section id="assetList">
+            <h2>Danh Sách Tài Sản</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tên Tài Sản</th>
+                        <th>Số Lượng</th>
+                        <th>Vị Trí</th>
+                        <th>Hinh anh</th>
+                        <th>Hành Động</th>
+                    </tr>
+                </thead>
+                <tbody id="assetTableBody">
+                    <!-- Danh sách tài sản sẽ được hiển thị ở đây -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <section class="footer">
+        <div class="visit-us">
+            <p>&copy; 2024 - Đại Học Phương Đông  - Hệ Thống Quản Lý Cơ Sở Vật Chất</p>
+            <p><i class="fas fa-phone"></i>  0243 623 0234</p>
+            <p><i class="fas fa-envelope"></i>  contact@phuongdong.edu.vn</p>
+            <p><i class="fas fa-map-marker-alt"></i>  Cơ sở 1: 171 Trung Kính, Yên Hòa, Cầu Giấy, Hà Nội</p>
+            <p><i class="fas fa-map-marker-alt"></i>  Cơ sở 2: Số 4, ngõ chùa Hưng, phố Minh Khai, Hai Bà Trưng, Hà Nội</p>
+        </div>
+        <div class="socials">
+            <h3>FOLLOW OUR SOCIALS</h3>
+            <p>
+                <a href="https://www.instagram.com/" target="_blank"> 
+                    <i class="fa-brands fa-instagram"></i> 
+                </a>
+                <a href="https://www.facebook.com/" target="_blank"> 
+                    <i class="fa-brands fa-facebook-f"></i> 
+                </a>
+                <a href="https://discord.com/" target="_blank"> 
+                    <i class="fa-brands fa-discord"></i> 
+                </a>
+                
+            </p>
+        </div>
+    </section>
+
+    <script src="taisan.js"></script>
+</body>
+</html>

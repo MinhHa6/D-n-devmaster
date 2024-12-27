@@ -1,0 +1,206 @@
+/* style.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Màu nền sáng hơn */
+}
+
+header {
+    background-color: #0066cc; /* Thay đổi màu sắc cho đẹp hơn */
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-bottom: 5px solid #004080;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+/* style.css */
+
+/* Tổng thể */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #0066cc; /* Màu nền header */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+/* Tiêu đề trong header */
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Điều hướng */
+nav {
+    margin-top: 20px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    width: 100px; /* Kích thước logo */
+    height: auto;
+    border-radius: 50%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background-color: #004080; /* Màu nền khi hover */
+    color: #ffffff; /* Màu chữ khi hover */
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+}
+
+main {
+    padding: 30px;
+    background-color: #ffffff; /* Màu nền trắng cho phần thân chính */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ cho phần chính */
+    margin-top: 20px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+#addAsset form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Căn giữa các input */
+    gap: 20px;
+}
+
+#addAsset input, #addAsset button {
+    padding: 12px;
+    margin: 8px 0;
+    width: 250px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    transition: all 0.3s ease; /* Thêm hiệu ứng khi hover */
+}
+
+#addAsset input:focus, #addAsset button:hover {
+    border-color: #0066cc;
+    box-shadow: 0 0 8px rgba(0, 102, 204, 0.5);
+}
+
+#addAsset button {
+    background-color: #0066cc;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#addAsset button:hover {
+    background-color: #004080;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #0066cc;
+    color: white;
+    font-size: 1.2em;
+}
+
+td {
+    font-size: 1em;
+}
+
+button.delete-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button.delete-btn:hover {
+    background-color: #e53935;
+}
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background: #f4f4f4;
+    padding: 40px 0;
+}
+
+.visit-us, .socials {
+    text-align: center;
+}
+
+.socials i {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #333;
+}

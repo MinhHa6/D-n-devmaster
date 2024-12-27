@@ -1,0 +1,125 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #ddd;
+}
+
+.banner {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    background: url('img/bannercontact.jpg') no-repeat center/cover;
+    padding: 100px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    top:20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 0px 15px;
+    transition: color 0.3s ease, transform 0.2s ease;  /* Hiệu ứng mượt */
+
+}
+.nav-links li a:hover {
+    color: #ffcc00;  /* Đổi màu khi di chuột vào */
+    transform: scale(1.1);  /* Phóng to nhẹ */
+}
+
+.nav-links li a:active {
+    animation: blink 0.2s;  /* Hiệu ứng nhấp nháy khi click */
+}
+
+/* Hiệu ứng nhấp nháy */
+@keyframes blink {
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.contact-form {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 800px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-group {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #a88db1;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background: #f4f4f4;
+    padding: 40px 0;
+}
+
+.visit-us, .socials {
+    text-align: center;
+}
+
+.socials i {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #333;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Bảo Trì</title>
+    <link rel="stylesheet" href="baotri.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Quản Lý Bảo Trì Thiết Bị</h1>
+        <div id="backButtonContainer">
+            <a href="trangchu.html" class="backButton">Quay về Trang Chủ</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Mẫu yêu cầu bảo trì -->
+        <section id="maintenance-request">
+            <h2>Yêu Cầu Bảo Trì</h2>
+            <form id="maintenanceForm">
+                <div class="form-group">
+                    <label for="device">Chọn Thiết Bị:</label>
+                    <select id="device" required>
+                        <option value="Device 1">Thiết Bị 1</option>
+                        <option value="Device 2">Thiết Bị 2</option>
+                        <option value="Device 3">Thiết Bị 3</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="description">Mô Tả Vấn Đề:</label>
+                    <textarea id="description" required></textarea>
+                </div>
+                <button type="submit">Gửi Yêu Cầu</button>
+            </form>
+        </section>
+
+        <!-- Danh sách thiết bị cần bảo trì -->
+        <section id="device-list">
+            <h2>Danh Sách Thiết Bị Cần Bảo Trì</h2>
+            <ul id="deviceList">
+                <!-- Thiết bị cần bảo trì sẽ được liệt kê ở đây -->
+            </ul>
+        </section>
+
+        <!-- Biểu đồ thống kê yêu cầu bảo trì -->
+        <section id="maintenance-chart">
+            <h2>Biểu Đồ Thống Kê Yêu Cầu Bảo Trì</h2>
+            <canvas id="maintenanceChart" width="400" height="200"></canvas>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Hệ thống Bảo Trì</p>
+    </footer>
+
+    <script src="baotri.js"></script>
+</body>
+</html>
